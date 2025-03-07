@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Full stack developer and blockchain enthusiast",
   openGraph: {
     title: "Nomso.com",
-    description: "full stack developer and ai enthusiast",
+    description: "Full stack developer and blockchain enthusiast",
     url: "https://Nomso.com",
     siteName: "Nomso.com",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.jpg",
   },
 };
 const inter = Inter({
