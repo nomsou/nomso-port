@@ -19,13 +19,13 @@ const socials = [
   },
   {
     icon: <FaGithub size={20} />,
-    href: "https://github.com/raji2004",
+    href: "https://github.com/nomsou",
     label: "Github",
     handle: "nomsou",
   },
   {
     icon: <FaLinkedin size={20} />,
-    href: "https://www.linkedin.com/in/muzzammil-raji-548687249/",
+    href: "https://www.linkedin.com/in/nomsounaogu/",
     label: "LinkedIn",
     handle: "Chukwunomso",
   },
