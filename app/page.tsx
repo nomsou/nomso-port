@@ -23,15 +23,6 @@ export default function Home() {
               {item.name}
             </Link>
           ))}
-          {/* Resume Link: Open in a new tab on mobile */}
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-300 sm:text-zinc-500 text-lg duration-500 hover:text-zinc-300 font-semibold"
-          >
-            Resume
-          </a>
         </ul>
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
