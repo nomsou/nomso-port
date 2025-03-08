@@ -5,6 +5,7 @@ import Particles from "./components/particles";
 const navigation = [
   // { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  { name: "Skills", href: "/skills" },
   { name: "Resume", href: "/resume.pdf" },
   { name: "Youtube", href: "https://www.youtube.com/nomso" },
 ];
@@ -18,7 +19,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-zinc-300 sm:text-zinc-500 text-lg duration-500 hover:text-zinc-300 font-semibold"
+              className="text-zinc-300 sm:text-zinc-500 text-lg duration-500 font-semibold hover:text-zinc-300"
             >
               {item.name}
             </Link>
