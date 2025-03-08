@@ -45,7 +45,7 @@ export default function Home() {
           >
             Refreeg
           </Link>{" "}
-          to solve Problems in Africa for africans.
+          to solve Problems in Africa for Africans.
         </h2>
       </div>
     </div>
