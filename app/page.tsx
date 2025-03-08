@@ -5,7 +5,12 @@ import Particles from "./components/particles";
 const navigation = [
   // { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
-  { name: "Resume", href: "/resume.pdf" },
+  {
+    name: "Resume",
+    href: "/resume.pdf",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
   { name: "Youtube", href: "https://www.youtube.com/nomso" },
 ];
 
