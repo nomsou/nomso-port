@@ -5,6 +5,8 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  // { name: "Resume", href: "/resume" },
+  { name: "Youtube", href: "https://www.youtube.com/nomso" },
 ];
 
 export default function Home() {
@@ -28,24 +30,24 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={1000}
       />
-      <h1 className="py-3.5 px-0.5 z-10 text-2xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl whitespace-nowrap bg-clip-text ">
-        Raji Muhammad Muzzamil
+      <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-7xl md:text-8xl whitespace-nowrap bg-clip-text ">
+        NOMSO
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          I'm building{" "}
+          I'm currently building{" "}
           <Link
             target="_blank"
             href="https://refreeg.com"
             className="underline duration-500 hover:text-zinc-300"
           >
             Refreeg
-          </Link> to solve Problems in Africa for africans.
+          </Link>{" "}
+          to solve Problems in Africa for africans.
         </h2>
       </div>
     </div>
   );
-
 }

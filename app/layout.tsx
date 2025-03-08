@@ -6,23 +6,15 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Raji.com",
-    template: "%s | Raji.com",
+    default: "Nomso.com",
+    template: "%s | Nomso.com",
   },
   description: "full stack developer and ai enthusiast",
   openGraph: {
-    title: "Raji.com",
-    description:
-      "full stack developer and ai enthusiast",
-    url: "https://Raji.com",
-    siteName: "Raji.com",
-    images: [
-      {
-        url: "https://Raji.com/og.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
+    title: "Nomso.com",
+    description: "full stack developer and ai enthusiast",
+    url: "https://Nomso.com",
+    siteName: "Nomso.com",
     locale: "en-US",
     type: "website",
   },
@@ -38,11 +30,11 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Raji",
+    title: "Nomso",
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.jpg",
   },
 };
 const inter = Inter({
@@ -66,8 +58,9 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>
