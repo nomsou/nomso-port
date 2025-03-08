@@ -14,15 +14,15 @@ export const revalidate = 60;
 export default async function ProjectsPage() {
   const views = (
     await redis.mget<number[]>(
-      ...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":")),
+      ...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":"))
     )
   ).reduce((acc, v, i) => {
     acc[allProjects[i].slug] = v ?? 0;
     return acc;
   }, {} as Record<string, number>);
-  
+
   const featured = allProjects.find((project) => project.slug === "vogtech")!;
-  const top2 = allProjects.find((project) =>project.slug === "quizlet")!;
+  const top2 = allProjects.find((project) => project.slug === "quizlet")!;
   const top3 = allProjects.find((project) => project.slug === "quizlet")!;
   const sorted = allProjects
     .filter((p) => p.published)
@@ -30,22 +30,22 @@ export default async function ProjectsPage() {
       (project) =>
         project.slug !== featured.slug &&
         project.slug !== top2.slug &&
-        project.slug !== top3.slug,
+        project.slug !== top3.slug
     )
     .sort(
       (a, b) =>
         new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
+        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
     );
-    
+
   return (
     <div className="relative pb-16">
       <Navigation />
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={1000}
-      />
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={1000}
+        />
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Projects
@@ -75,7 +75,7 @@ export default async function ProjectsPage() {
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
-                      views[featured.slug] ?? 0,
+                      views[featured.slug] ?? 0
                     )}
                   </span>
                 </div>

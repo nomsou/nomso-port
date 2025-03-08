@@ -36,11 +36,11 @@ const socials = [
 export default function Example() {
   return (
     <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900  pb-16">
+      <Navigation />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={1000}
       />
-      <Navigation />
       <div className="container flex items-center justify-center  min-h-screen px-4 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto my-32 md:mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
