@@ -7,7 +7,7 @@ const navigation = [
   { name: "Contact", href: "/contact" },
   { name: "Skills", href: "/skills" },
   { name: "Resume", href: "/resume.pdf" },
-  { name: "Youtube", href: "https://www.youtube.com/nomso" },
+  // { name: "Youtube", href: "https://www.youtube.com/nomso" },
 ];
 
 export default function Home() {
