@@ -44,7 +44,7 @@ export const Navigation: React.FC = () => {
               href="/skills"
               className="duration-200 text-zinc-400 hover:text-zinc-100"
             >
-              Contact
+              Skills
             </Link>
             {/* <Link
               href="/https://www.youtube.com/nomso"
