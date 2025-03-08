@@ -6,7 +6,7 @@ const navigation = [
   // { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
   { name: "Skills", href: "/skills" },
-  { name: "Resume", href: "/resume.pdf" },
+  { name: "Resume", href: "/nomso_resume.pdf" },
   // { name: "Youtube", href: "https://www.youtube.com/nomso" },
 ];
 
