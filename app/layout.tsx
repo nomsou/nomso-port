@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     title: "Nomso",
     card: "summary_large_image",
   },
-  // icons: {
-  //   shortcut: "/favicon.jpg",
-  // },
+  icons: {
+    shortcut: "/favicon.jpg",
+  },
 };
 const inter = Inter({
   subsets: ["latin"],
